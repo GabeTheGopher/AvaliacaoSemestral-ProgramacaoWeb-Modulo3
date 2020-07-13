@@ -1,0 +1,24 @@
+<!--Desenvolver um algoritmo em JavaScript que efetue a soma de todos os números ímpares que são múltiplos 
+    de três e que se encontram no conjunto dos números de 1 até 500.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+</head>
+<body>
+    <script>
+        let contador = 0; //Essa variável irá somar todos os números impares que são multiplos de 3
+
+        for(let i = 0; i<= 500; i++){ //loop para fazer a soma de todos os multiplos impares
+            if(i % 3 == 0){ //if para verificar se o número é multiplo de 3
+                if(i % 2 == 1){ //if para verificar se o número é impar
+                    contador+= i;
+                }
+            }
+        }
+        alert("A soma dos números impares multiplos de 3 equivale a: "+contador)
+    </script>
+</body>
+</html>

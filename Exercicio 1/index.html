@@ -1,0 +1,26 @@
+
+<!-- 1. Faça um algoritmo em JavaScript que receba o valor do raio de um circulo qualquer. 
+Calcule o perímetro do círculo (P = 2.pi.r) , a Área do circulo (A = PI . r²) e o Diâmetro 
+do círculo (D = 2 . r). Mostre os resultados.-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script>
+       let r = prompt("Digite o valor do raio do círculo.") //valor do raio do círculo
+       let p = 2 * Math.PI * r //perímetro do círculo
+       let a = Math.PI * Math.pow(r,2) //área do círculo
+       let d = 2 * r //diâmetro do círculo
+       let resultado = "Raio: "+r +"\nPerímetro: "+p.toFixed(2)
+       +"\nÁrea: "+a.toFixed(2) +"\nDiâmetro: "+d /*variável usada para limitar as casas decimais
+       dos resultados (Método .toFixed())*/
+
+       alert(resultado)
+
+    </script>
+</body>
+</html>
